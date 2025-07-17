@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+  color: #144031;
+  background-color: #fffffe;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 1rem 1rem 1.5rem;
+  font-size: .5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #144031;
+  color: #fffffe;
+}
+
+h2 {
+  font-size: 1rem;
+  padding-bottom: .8em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .6rem;
+  padding-bottom: .5em;
+  font-weight: 200px;
+}
+
+a {
+  font-size: .4rem;
+  font-weight: 600;
+  color: #144031;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.section-content{
+    display: grid;
+    grid-template: repeat(3, 240px) / repeat(2, 240px);
+    margin-bottom: 150px;
+}
+
+.text1, .text3 {
+  padding: 1.5rem 1.5rem 0 1rem;
+}
+
+.text2 {
+  padding: 1.5rem 1rem 0 1.5rem;
+}
+
+.image1 {
+  background-color: yellow;
+  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/Backrooms_Space.png?v=1666819450983");
+  background-size: cover;
+  background-position: center;
+}
+
+.image2 {
+  background-color: yellow;
+  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/FREqhyhUcAAXJKD.jpeg?v=1666819214339");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.image3 {
+  background-color: yellow;
+  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/environment.webp?v=1667175740854");
+  background-size: cover;
+  background-position: center;
+}
+
