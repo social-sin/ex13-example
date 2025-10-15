@@ -1,26 +1,24 @@
-/* Reset */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
 html {
   font-size: 24px;
-  font-family: 'IBM Plex Sans', sans-serif;
   color: #144031;
   background-color: #fffffe;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-  max-width: 480px;
+  width: 480px;
   margin: 0 auto;
 }
 
-h1.section-intro {
+h1 {
   padding: 1rem 1rem 1.5rem;
-  font-size: 0.5rem;
+  font-size: .5rem;
   font-weight: 700;
   text-transform: uppercase;
   background-color: #144031;
@@ -29,38 +27,34 @@ h1.section-intro {
 
 h2 {
   font-size: 1rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: .8em;
   font-weight: 700;
 }
 
 p {
-  font-size: 0.6rem;
-  padding-bottom: 0.5rem;
-  font-weight: 200; /* removed px, font-weight uses number */
+  font-size: .6rem;
+  padding-bottom: .5em;
+  font-weight: 200px;
 }
 
 a {
-  font-size: 0.4rem;
+  font-size: .4rem;
   font-weight: 600;
   color: #144031;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-a:hover {
+a:hover{
   text-decoration: underline;
 }
 
-/* Grid layout */
-.section-content {
-  display: grid;
-  grid-template-columns: repeat(2, 240px);
-  grid-template-rows: repeat(3, 240px);
-  gap: 1rem; /* optional spacing between items */
-  margin-bottom: 150px;
+.section-content{
+    display: grid;
+    grid-template: repeat(3, 240px) / repeat(2, 240px);
+    margin-bottom: 150px;
 }
 
-/* Text sections padding */
 .text1, .text3 {
   padding: 1.5rem 1.5rem 0 1rem;
 }
@@ -69,21 +63,24 @@ a:hover {
   padding: 1.5rem 1rem 0 1.5rem;
 }
 
-/* Image sections */
-.image1, .image2, .image3 {
+.image1 {
   background-color: yellow;
+  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/Backrooms_Space.png?v=1666819450983");
   background-size: cover;
   background-position: center;
 }
 
-.image1 {
-  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/Backrooms_Space.png?v=1666819450983");
+.image2 {
+  background-color: yellow;
+  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/FREqhyhUcAAXJKD.jpeg?v=1666819214339");
+  background-size: cover;
+  background-position: center;
 }
 
-.image2 {
-  background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/FREqhyhUcAAXJKD.jpeg?v=1666819214339");
-}
 
 .image3 {
+  background-color: yellow;
   background-image: url("https://cdn.glitch.global/9a5b8496-9f33-46ea-925b-3429ffc5372c/environment.webp?v=1667175740854");
+  background-size: cover;
+  background-position: center;
 }
